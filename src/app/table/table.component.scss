@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    background-color:#ddd;
+    border: 1px solid #000;
+    padding: 8px;
+    // text-align: left;
+    text-align: center !important;
+    color:#000;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  .demo-table {
+    width: 100%;
+  }
+
+  
+  .mat-column-demo-position {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+   
+  }
+  
+  .mat-column-demo-name {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  
+  .mat-column-demo-weight {
+    font-style: italic;
+  }
+  
+  .mat-column-demo-symbol {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
