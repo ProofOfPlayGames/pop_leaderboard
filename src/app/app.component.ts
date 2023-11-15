@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AppComponent {
   title = 'pop_leaderboard';
 
-  constructor(
-    private http: HttpClient) { 
-      this.onCreateData();
+  constructor() { 
     }
 
-    onCreateData(){
-      this.http.get("https://104.236.68.131:3006/leaderboard").subscribe((response) => {
-        console.log(response);
-      });
-    }
 }

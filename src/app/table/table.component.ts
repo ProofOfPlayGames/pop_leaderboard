@@ -31,7 +31,7 @@ export class TableComponent implements OnInit {
 
   loadData() {
     // Replace with your API endpoint
-    this.http.get<any[]>('https://104.236.68.131:3006/leaderboard').subscribe((data) => {
+    this.http.get<any[]>('http://104.236.68.131:3008/leaderboard').subscribe((data) => {
       // document.body.innerHTML = String(data);
       this.data = data;
       var totalPopPoints = 0;
