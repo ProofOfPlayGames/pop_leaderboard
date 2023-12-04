@@ -5,6 +5,11 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Username</th>
       <td mat-cell *matCellDef="let row">{{ row.username }}</td>
     </ng-container>
+
+    <ng-container matColumnDef="pub_key">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Public Key</th>
+        <td mat-cell *matCellDef="let row">{{ row.pub_key }}</td>
+      </ng-container>
   
     <ng-container matColumnDef="high_score">
       <th mat-header-cell *matHeaderCellDef mat-sort-header style="background-color:#99ccff !important">High Score (HS)</th>

@@ -14,7 +14,7 @@ export class TableComponent implements OnInit {
   data: any[] = [];
   dataSource: MatTableDataSource<any> = new MatTableDataSource();
 
-  displayedColumns: string[] = ['username', 'high_score', 'total_games', 'total_score', 'today_high_score', 'today_games', 'today_score', 'popPoints', 'tokenEstimate']; // Update with your database columns
+  displayedColumns: string[] = ['username', 'pub_key', 'high_score', 'total_games', 'total_score', 'today_high_score', 'today_games', 'today_score', 'popPoints', 'tokenEstimate']; // Update with your database columns
 
   constructor(private http: HttpClient, private _liveAnnouncer: LiveAnnouncer) {}
 
@@ -49,7 +49,7 @@ export class TableComponent implements OnInit {
       });
       this.data.forEach(row => {
         if(row["pub_key"] != ""){
-          row["tokenEstimate"] = Math.floor((row["popPoints"]/totalPopPoints)*2739726);
+          row["tokenEstimate"] = Math.floor((row["popPoints"]/totalPopPoints)*4109589);
         }
       });
       this.dataSource = new MatTableDataSource(data);
